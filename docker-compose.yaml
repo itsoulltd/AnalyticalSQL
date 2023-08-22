@@ -22,7 +22,9 @@ services:
       - web-app-net
     volumes:
       - postgres-storage:/var/lib/postgresql/data
-      - ./src/resources/exercise_data.sql:/docker-entrypoint-initdb.d/exercise_data.sql
+      # Note: Place the backup.sql in the postgres-dump dir,
+      # which should be in the same dir as the docker-compose.yaml file.
+      - ./postgres-dump:/docker-entrypoint-initdb.d
 
   pgadmin:
     image: dpage/pgadmin4
