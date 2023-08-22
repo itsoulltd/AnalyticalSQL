@@ -22,6 +22,7 @@ services:
       - web-app-net
     volumes:
       - postgres-storage:/var/lib/postgresql/data
+      - ./src/resources/exercise_data.sql:/docker-entrypoint-initdb.d/exercise_data.sql
 
   pgadmin:
     image: dpage/pgadmin4
