@@ -21,7 +21,7 @@
     12.2. RANK, LEAD & LAG
     12.3. WIDTH_BUCKET & CUME_DIST
 
-#### 13. Common Table Expression (CTEs)
+#### 13. Common Table Expression (CTEs) 
 
 
     
