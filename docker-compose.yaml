@@ -22,8 +22,6 @@ services:
       - web-app-net
     volumes:
       - postgres-storage:/var/lib/postgresql/data
-      # Note: Place the backup.sql in the postgres-dump dir,
-      # which should be in the same dir as the docker-compose.yaml file.
       - ./postgres-dump:/docker-entrypoint-initdb.d
 
   pgadmin:
